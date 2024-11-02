@@ -15,8 +15,8 @@ public class Android implements IDevice{
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("appium:deviceName","Pixel7V13");
         capabilities.setCapability("appium:platformVersion","13.0");
-        capabilities.setCapability("appium:appPackage","com.vrproductiveapps.whendo");
-        capabilities.setCapability("appium:appActivity","ui.HomeActivity");
+        capabilities.setCapability("appium:appPackage","com.google.android.deskclock");
+        capabilities.setCapability("appium:appActivity","com.android.deskclock.DeskClock");
         capabilities.setCapability("appium:platformName","Android");
         capabilities.setCapability("appium:automationName","uiautomator2");
         AppiumDriver driver = null;

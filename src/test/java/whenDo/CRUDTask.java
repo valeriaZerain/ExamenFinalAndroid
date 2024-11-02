@@ -18,8 +18,8 @@ public class CRUDTask extends WhenDoBase{
         taskFormsPage.addTaskButton.click();
         String actualTask = mainPage.nameOfTaskLabel.getText();
         String actualNoteTask = mainPage.noteOfTaskLabel.getText();
-        Assertions.assertEquals(task, actualTask);
-        Assertions.assertEquals(noteTask,actualNoteTask);
+        Assertions.assertEquals(task, actualTask,"ERROR! The task was not created");
+        Assertions.assertEquals(noteTask,actualNoteTask,"ERROR! The task was not created");
 
         //Update project
         String updatedTask = task + "UPDATED";
@@ -31,13 +31,13 @@ public class CRUDTask extends WhenDoBase{
         taskFormsPage.updateTaskbutton.click();
         actualTask = mainPage.nameOfTaskLabel.getText();
         actualNoteTask = mainPage.noteOfTaskLabel.getText();
-        Assertions.assertEquals(updatedTask, actualTask);
-        Assertions.assertEquals(updatedNote,actualNoteTask);
+        Assertions.assertEquals(updatedTask, actualTask,"ERROR! The task was not updated");
+        Assertions.assertEquals(updatedNote,actualNoteTask,"ERROR! The task was not updated");
 
         //Delete project
         mainPage.taskButton.click();
         taskFormsPage.deleteTaskButton.click();
         deleteProjectPopUp.confirmDeleteButton.click();
-        Assertions.assertTrue(mainPage.noTasksLabel.isControlDisplayed());
+        Assertions.assertTrue(mainPage.noTasksLabel.isControlDisplayed(),"ERROR!The task was not deleted");
     }
 }

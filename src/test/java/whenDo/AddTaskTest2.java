@@ -18,7 +18,7 @@ public class AddTaskTest2 extends WhenDoBase{
         String actualTask = mainPage.nameOfTaskLabel.getText();
         String actualNoteTask = mainPage.noteOfTaskLabel.getText();
         Assertions.assertEquals(task, actualTask);
-        Assertions.assertEquals(noteTask,actualNoteTask);
+        Assertions.assertEquals(noteTask,actualNoteTask,"ERROR! The task was not created");
     }
 
 }
