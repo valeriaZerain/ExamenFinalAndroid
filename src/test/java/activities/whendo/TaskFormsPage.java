@@ -10,4 +10,9 @@ public class TaskFormsPage {
     public Button addTaskButton = new Button(By.id("com.vrproductiveapps.whendo:id/saveItem"));
     public Button updateTaskbutton = new Button(By.xpath("//android.widget.TextView[@content-desc=\"Save\"]"));
     public Button deleteTaskButton = new Button(By.xpath("//android.widget.TextView[@content-desc=\"Delete\"]"));
+
+    public void addTask(String nameOfTask){
+        taskNameTextBox.setText(nameOfTask);
+        addTaskButton.click();
+    }
 }
