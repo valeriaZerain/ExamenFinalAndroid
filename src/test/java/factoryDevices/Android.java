@@ -16,11 +16,11 @@ public class Android implements IDevice{
         capabilities.setCapability("appium:deviceName","Pixel7V13");
         capabilities.setCapability("appium:platformVersion","13.0");
         //whendo
-        capabilities.setCapability("appium:appPackage","com.vrproductiveapps.whendo");
-        capabilities.setCapability("appium:appActivity","com.vrproductiveapps.whendo.ui.HomeActivity");
+//        capabilities.setCapability("appium:appPackage","com.vrproductiveapps.whendo");
+//        capabilities.setCapability("appium:appActivity","com.vrproductiveapps.whendo.ui.HomeActivity");
         //alarm
-//        capabilities.setCapability("appium:appPackage","com.google.android.deskclock");
-//        capabilities.setCapability("appium:appActivity","com.android.deskclock.DeskClock");
+        capabilities.setCapability("appium:appPackage","com.google.android.deskclock");
+        capabilities.setCapability("appium:appActivity","com.android.deskclock.DeskClock");
         //youtube
 //        capabilities.setCapability("appium:appPackage","com.google.android.youtube");
 //        capabilities.setCapability("appium:appActivity","com.google.android.apps.youtube.app.WatchWhileActivity");

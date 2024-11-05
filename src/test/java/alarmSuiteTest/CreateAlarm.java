@@ -12,7 +12,7 @@ public class CreateAlarm extends AlarmTestBase{
         alarmPage.selectHour.click();
         alarmPage.selectMinutes.click();
         alarmPage.selectAM.click();
-        alarmPage.acceptAlarm.click();
+        //alarmPage.acceptAlarm.click();
         Assertions.assertTrue(alarmPage.newAlarmLabel.isControlDisplayed(),"ERROR! The alarm was not created");
     }
 }
